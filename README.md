@@ -1,26 +1,26 @@
 # Humans_vs_Zombies
-Base Game
-
 Author: Martin Suarez
+
 10/26/2015
+
 IGME.202.03-04
+
 Homework 3B
 
 =====================
-=     CONTROLS      =
+ CONTROLS
 =====================
-= X - Enable/Disable=
-=     debug lines.  = 
-= Z - Add zombie to =
-=     the field     =
-= H - Add human to  =
-=     the field     =
-= W A S D - Move    =
-=         player    =
-= Space - Shoot     =
-= P - Respawns      =
-=      player       =
-=====================
+X - Enable/Disable debug lines
+
+Z - Add zombie to the field
+
+H - Add human to the field     
+
+W A S D - Move player    
+
+Space - Shoot     
+
+P - Respawns player       
                     
 This programs create a field with trees, zombies, and humans.
 Zombies and humans extend the Vehicle class, which in turn
