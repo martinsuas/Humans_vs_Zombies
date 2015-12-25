@@ -7,21 +7,6 @@ IGME.202.03-04
 
 Homework 3B
 
-=====================
- CONTROLS
-=====================
-X - Enable/Disable debug lines
-
-Z - Add zombie to the field
-
-H - Add human to the field     
-
-W A S D - Move player    
-
-Space - Shoot     
-
-P - Respawns player       
-                    
 This programs create a field with trees, zombies, and humans.
 Zombies and humans extend the Vehicle class, which in turn
 implements the Obstacle interface. Trees also implement the
@@ -42,7 +27,22 @@ at the bottom get drawn first.
 To determine the number of humans, zombies, and trees, simply modify
 the Field_Manager constructor.
 
-Extra Effort: 
+ CONTROLS
+=====================
+X - Enable/Disable debug lines
+
+Z - Add zombie to the field
+
+H - Add human to the field     
+
+W A S D - Move player    
+
+Space - Shoot     
+
+P - Respawns player       
+
+EXTRAS
+=====================
 * Using a single avoid_all() method, any Vehicle can add a list of
 objects (that implement the Obstacle interface) to ensure it will
 avoid these objects. 
@@ -51,6 +51,8 @@ avoid these objects.
 * Included a shooter player
 * Useful debug commands, like respawning zombies, humans, and the player.
 
-CREDITS:
+CREDITS
+=====================
 Zombie and Player images - Bombshell93 at http://www.vg-resource.com/post-493179.html
+
 Human images - IAN HALLIWELL at http://gamedev.dmlive.co.nz/2014/04/17/
