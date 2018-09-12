@@ -1,55 +1,53 @@
 # Humans_vs_Zombies
 Author: Martin Suarez
 
-10/26/2015
+ RULES
+=====================
 
-IGME.202.03-04
+The field starts with a predetermined number of humans, zombies, trees,
+and the player (a human). The zombies actively seek the nearest human,
+evading any obstacle (trees or other zombies) while the humans wander
+around the forest, only running away if a zombie gets too close.
 
-Homework 3B
+The player must shoot down the zombies and prevent other humans from
+being attacked. Keep in mind that bullets and zombies cannot traverse 
+trees, but the player can.
 
-This programs create a field with trees, zombies, and humans.
-Zombies and humans extend the Vehicle class, which in turn
-implements the Obstacle interface. Trees also implement the
-Obstacle interface.
-
-The player extends the human class, and is controlled by the arrow 
-keys. The player can kill humans and zombies, but loses points if
-she kills the former.
-
-A Field_Manager class creates, manages, and updates the lists
-of humans, zombies, and trees, as well as checking for collisions
-and transforming the humans as needed.
-
-Since trees are generated at random locations, the TreeComparator
-is used them to sort them to descending Y value to ensure the ones
-at the bottom get drawn first.
+If a zombie touches the player, it's game over.
 
 To determine the number of humans, zombies, and trees, simply modify
 the Field_Manager constructor.
 
  CONTROLS
 =====================
+
+W A S D - Move player    
+
+Space - Shoot
+
+ DEBUG
+=====================
+
 X - Enable/Disable debug lines
 
 Z - Add zombie to the field
 
 H - Add human to the field     
 
-W A S D - Move player    
+P - Respawns player      
 
-Space - Shoot     
 
-P - Respawns player       
-
-EXTRAS
+ LATEST
 =====================
-* Using a single avoid_all() method, any Vehicle can add a list of
-objects (that implement the Obstacle interface) to ensure it will
-avoid these objects. 
-* Zombies and humans avoid interlapping with their own kind.
-* Trees look better than circle
-* Included a shooter player
-* Useful debug commands, like respawning zombies, humans, and the player.
+
+Useful debug commands, like respawning zombies, humans, and the player.
+
+ TODO
+=====================
+
+Scoring system.
+
+Add Game Over screen.
 
 CREDITS
 =====================

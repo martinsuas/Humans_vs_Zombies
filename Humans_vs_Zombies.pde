@@ -1,14 +1,14 @@
 /*
-NOTE: USING MY SECOND OVERALL GRACE DAY.
-Thank you!
-
 Author: Martin Suarez
-10/26/2015
-IGME.202.03-04
-Homework 3B
 
 =====================
 =     CONTROLS      =
+=====================
+= W A S D - Move    =
+=         player    =
+= Space - Shoot     =
+=====================
+=       DEBUG       =
 =====================
 = X - Enable/Disable=
 =     debug lines.  = 
@@ -16,41 +16,29 @@ Homework 3B
 =     the field     =
 = H - Add human to  =
 =     the field     =
-= W A S D - Move    =
-=         player    =
-= Space - Shoot     =
 = P - Respawns      =
 =      player       =
 =====================
-                    
-This programs create a field with trees, zombies, and humans.
-Zombies and humans extend the Vehicle class, which in turn
-implements the Obstacle interface. Trees also implement the
-Obstacle interface.
 
-The player extends the human class, and is controlled by the arrow 
-keys. The player can kill humans and zombies, but loses points if
-she kills the former.
+Rules:
+The field starts with a predetermined number of humans, zombies, trees,
+and the player (a human). The zombies actively seek the nearest human,
+evading any obstacle (trees or other zombies) while the humans wander
+around the forest, only running away if a zombie gets too close.
 
-A Field_Manager class creates, manages, and updates the lists
-of humans, zombies, and trees, as well as checking for collisions
-and transforming the humans as needed.
+The player must shoot down the zombies and prevent other humans from
+being attacked. Keep in mind that bullets and zombies cannot traverse 
+trees, but the player can.
 
-Since trees are generated at random locations, the TreeComparator
-is used them to sort them to descending Y value to ensure the ones
-at the bottom get drawn first.
+If a zombie touches the player, it's game over.
 
 To determine the number of humans, zombies, and trees, simply modify
 the Field_Manager constructor.
 
-Extra Effort: 
-* Using a single avoid_all() method, any Vehicle can add a list of
-objects (that implement the Obstacle interface) to ensure it will
-avoid these objects. 
-* Zombies and humans avoid interlapping with their own kind.
-* Trees look better than circles :3
-* Included a shooter player
+Latest Feature: 
 * Useful debug commands, like respawning zombies, humans, and the player.
+
+Todo:
 * Score system
 
 CREDITS:
