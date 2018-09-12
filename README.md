@@ -1,6 +1,8 @@
 # Humans_vs_Zombies
 Author: Martin Suarez
 
+![Game preview](data/preview.JPG?raw=true "Preview")
+
  RULES
 =====================
 
